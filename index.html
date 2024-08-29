@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanize AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="image.png" alt="" >
+        <h1>Humanize AI</h1>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Humanize AI text</h1>
+        <h2>Humanize AI text with the smartest AI humanizer</h2>
+        <p>
+            Transform your AI-generated content into natural, human-like text with
+            the ultimate Humanize AI text tool. This AI-to-human text converter
+            effortlessly converts output from ChatGPT, Bard, Jasper, Grammarly,
+            GPT-4, and other AI text generators into text indistinguishable from
+            human writing. Achieve 100% originality and enhance your content
+            creation with the best Humanize AI solution available.
+        </p>
+    </div>
+
+    <!-- Edit Mode Selection -->
+    <div class="editmode-selection">
+        <!-- Mode Selection -->
+        <div class="modeselection">
+            <div data-tooltip="Standard mode preserves the original text style and tone as much as possible">Standard</div>
+            <div data-tooltip="Academic mode is perfect for scholarly writing and research papers">Academic</div>
+            <div data-tooltip="Simple mode focuses on clarity and simplicity of language">Simple</div>
+            <div data-tooltip="Flowing mode enhances the rhythm and flow of your text">Flowing</div>
+            <div data-tooltip="Formal mode is ideal for professional and business communications">Formal</div>
+            <div data-tooltip="Informal mode is perfect for casual conversations and friendly tones">Informal</div>
+            <div data-tooltip="Ultramode offers the ultimate transformation, humanizing your text to the max">Ultramode
+                <label class="toggle-switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    
+
+        <!-- Input and Output Containers -->
+        <div class="input-output-container">
+            <div class="input-container">
+                <button id="clear-btn">&times;</button>
+                <textarea placeholder="Paste your AI-generated text here..."></textarea>
+                <div class="button-container">
+                    <span class="word-count">0 words</span>
+                    <button id="humanize-btn">Humanize AI</button>
+                </div>
+            </div>
+
+            <div class="output-container">
+                <div id="timer" class="loading-animation" style="display: none;"></div>
+                <span id="output-placeholder" style="display: block; color: #333;">Your humanized text will appear here...</span>
+                <div id="output-text" style="display: none;"></div>
+                <i class="copy-icon">&#128203;</i>
+                <span class="word-count">0 words</span>
+                <div class="response-navigation">
+                    <button class="nav-btn" id="prev-response">&larr;</button>
+                    <span id="response-number">1/1</span>
+                    <button class="nav-btn" id="next-response">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
